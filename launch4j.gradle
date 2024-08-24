@@ -1,0 +1,8 @@
+launch4j {
+    outfile = "${artifact_name}.exe"
+    mainClassName = main
+    icon = "${projectDir}/blizzity-logo.ico"
+    outputDir = "libs"
+}
+
+build.dependsOn(createAllExecutables)

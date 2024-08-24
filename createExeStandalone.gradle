@@ -1,0 +1,5 @@
+tasks.register('createExeStandalone', Launch4jLibraryTask) {
+    mustRunAfter("createExe")
+    outfile = "${artifact_name}-standalone.exe"
+    jarTask = project.tasks.shadowJar
+}
