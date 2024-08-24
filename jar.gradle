@@ -1,0 +1,6 @@
+jar {
+    archiveFileName = "${artifact_name}.jar"
+    manifest {
+        attributes 'Main-Class': main
+    }
+}
