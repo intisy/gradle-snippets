@@ -1,3 +1,5 @@
+apply plugin: "com.github.johnrengelman.shadow" version "8.1.1"
+
 shadowJar {
     archiveFileName = "${artifact_name}-standalone.jar"
     manifest {
