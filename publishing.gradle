@@ -2,7 +2,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/$actor/$artifact_name")
+            url = uri("https://maven.pkg.github.com/$author/$artifact_name")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
