@@ -4,3 +4,11 @@ java {
     withSourcesJar()
     withJavadocJar()
 }
+
+tasks.named("sourcesJar") {
+    archiveFileName = "${artifact_name}-sources.jar"
+}
+
+tasks.named("javadocJar") {
+    archiveFileName = "${artifact_name}-javadoc.jar"
+}
