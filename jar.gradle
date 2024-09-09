@@ -1,3 +1,5 @@
+apply plugin: "java"
+
 jar {
     archiveFileName = "${artifact_name}.jar"
     manifest {
