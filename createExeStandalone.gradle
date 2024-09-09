@@ -1,6 +1,10 @@
-apply plugin: "java"
-apply plugin: "edu.sc.seis.launch4j"
-apply plugin: "com.github.johnrengelman.shadow"
+import edu.sc.seis.launch4j.tasks.Launch4jLibraryTask
+
+plugins {
+    id "com.github.johnrengelman.shadow"
+    id "edu.sc.seis.launch4j"
+    id "java"
+}
 
 tasks.register('createExeStandalone', Launch4jLibraryTask) {
     mustRunAfter("createExe")
