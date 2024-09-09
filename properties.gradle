@@ -15,8 +15,8 @@ gradle.taskGraph.whenReady { taskGraph ->
     if (!project.hasProperty('artifact_description')) {
         property = 'artifact_description'
     }
-    if (!project.hasProperty('intisy')) {
-        property = 'intisy'
+    if (!project.hasProperty('author')) {
+        property = 'author'
     }
     if (property != null) {
         throw new GradleException("Required property '$property' is not set. Please define them in gradle.properties or pass them as command line arguments.")
