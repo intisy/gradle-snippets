@@ -1,9 +1,7 @@
-apply plugin: "com.github.johnrengelman.shadow"
-apply plugin: "edu.sc.seis.launch4j"
-apply plugin: "java"
-
-tasks.register('createExeStandalone', edu.sc.seis.launch4j.tasks.Launch4jLibraryTask) {
-    mustRunAfter("createExe")
-    outfile = "${artifact_name}-standalone.exe"
-    jarTask = project.tasks.shadowJar
+project.afterEvaluate {
+    tasks.create('createExeStandalone', edu.sc.seis.launch4j.tasks.Launch4jLibraryTask) {
+        mustRunAfter("createExe")
+        outfile = "${artifact_name}-standalone.exe"
+        jarTask = project.tasks.shadowJar
+    }
 }
