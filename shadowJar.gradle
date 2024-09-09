@@ -1,6 +1,6 @@
 shadowJar {
     archiveFileName = "${artifact_name}-standalone.jar"
     manifest {
-        attributes "Main-Class": "${group}.Main"
+        attributes "Main-Class": "${artifact_group}.${artifact_id}.Main"
     }
 }

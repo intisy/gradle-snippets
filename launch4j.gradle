@@ -1,7 +1,7 @@
 launch4j {
     outfile = "${artifact_name}.exe"
-    mainClassName = main
-    icon = "${projectDir}/blizzity-logo.ico"
+    mainClassName = "${artifact_group}.${artifact_id}.Main"
+    icon = "${projectDir}/${artifact_name}.ico"
     outputDir = "libs"
 }
 
