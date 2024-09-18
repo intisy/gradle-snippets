@@ -7,7 +7,7 @@ launch4j {
     jvmOptions = ['-Xms512m', '-Xmx1024m']
     headerType = 'gui'
     bundledJrePath = 'jre'
-    bundledJre64Bit = true
+    requires64Bit = true
     jreMinVersion = '1.8'
 }
 
