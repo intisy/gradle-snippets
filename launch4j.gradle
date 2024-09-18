@@ -8,7 +8,6 @@ launch4j {
     headerType = "gui"
     bundledJrePath = "${projectDir}/jre/OpenJDK8U-jre_x64_windows_hotspot_8u422b05.zip"
     requires64Bit = true
-    jreMinVersion = "1.8"
 }
 
 build.dependsOn(createAllExecutables)
