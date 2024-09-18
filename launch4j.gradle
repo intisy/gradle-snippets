@@ -1,8 +1,12 @@
 launch4j {
-    outfile = "${artifact_name}.exe"
     mainClassName = "${artifact_group}.${artifact_id}.Main"
+    jar = "${project.buildDir}/libs/${project.name}.jar"
+    outfile = "${artifact_name}.exe"
     icon = "${projectDir}/${artifact_name}.ico"
     outputDir = "libs"
+    jvmOptions = ['-Xms512m', '-Xmx1024m']
+    headerType = 'gui'
+    requiresJre = '1.8.0'
 }
 
 build.dependsOn(createAllExecutables)
