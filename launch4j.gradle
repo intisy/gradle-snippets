@@ -1,6 +1,5 @@
 launch4j {
     mainClassName = "${artifact_group}.${artifact_id}.Main"
-    jar = "${project.buildDir}/libs/${project.name}.jar"
     outfile = "${artifact_name}.exe"
     icon = "${projectDir}/${artifact_name}.ico"
     outputDir = "libs"
