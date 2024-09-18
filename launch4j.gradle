@@ -5,8 +5,9 @@ launch4j {
     outputDir = "libs"
     headerType = "gui"
     jvmOptions = ["-Xms512m", "-Xmx1024m"]
-    bundledJrePath = "${rootProject.projectDir}/jre/jdk8u422-b05-jre"
+    bundledJrePath = file("${rootProject.projectDir}/jre/jdk8u422-b05-jre").path
     requires64Bit = true
+    copyConfigurable = fileTree(dir: 'src/main/resources', includes: ['**/*'])
 }
 
 build.dependsOn(createAllExecutables)
