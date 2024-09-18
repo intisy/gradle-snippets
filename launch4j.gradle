@@ -3,12 +3,12 @@ launch4j {
     outfile = "${artifact_name}.exe"
     icon = "${projectDir}/${artifact_name}.ico"
     outputDir = "libs"
-    headerType = 'gui'
-    jvmOptions = ['-Xms512m', '-Xmx1024m']
-    headerType = 'gui'
-    bundledJrePath = "${projectDir}/jre"
+    headerType = "gui"
+    jvmOptions = ["-Xms512m", "-Xmx1024m"]
+    headerType = "gui"
+    bundledJrePath = "${projectDir}/jre/OpenJDK8U-jre_x64_windows_hotspot_8u422b05.zip"
     requires64Bit = true
-    jreMinVersion = '1.8'
+    jreMinVersion = "1.8"
 }
 
 build.dependsOn(createAllExecutables)
