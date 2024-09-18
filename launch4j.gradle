@@ -5,8 +5,7 @@ launch4j {
     outputDir = "libs"
     headerType = "gui"
     jvmOptions = ["-Xms512m", "-Xmx1024m"]
-    headerType = "gui"
-    bundledJrePath = "${projectDir}/jre/OpenJDK8U-jre_x64_windows_hotspot_8u422b05.zip"
+    bundledJrePath = "${projectDir}/jre/jdk8u422-b05-jre"
     requires64Bit = true
 }
 
