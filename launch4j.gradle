@@ -6,11 +6,9 @@ launch4j {
     headerType = 'gui'
     jvmOptions = ['-Xms512m', '-Xmx1024m']
     headerType = 'gui'
-    jre {
-        path = "${projectDir}/jre" // Optional: Path to bundled JRE
-        bundledJre64Bit = true // For 64-bit JRE bundling
-        minVersion = '1.8.0' // Specify minimum JRE version if not bundling
-    }
+    bundledJrePath = 'jre'
+    bundledJre64Bit = true
+    jreMinVersion = '1.8'
 }
 
 build.dependsOn(createAllExecutables)
