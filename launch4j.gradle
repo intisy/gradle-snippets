@@ -7,7 +7,6 @@ launch4j {
     jvmOptions = ["-Xms512m", "-Xmx1024m"]
     bundledJrePath = file("${rootProject.projectDir}/jre/jdk8u422-b05-jre").path
     requires64Bit = true
-    copyConfigurable = fileTree(dir: 'src/main/resources', includes: ['**/*'])
 }
 
 build.dependsOn(createAllExecutables)
