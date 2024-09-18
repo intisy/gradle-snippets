@@ -5,7 +5,7 @@ launch4j {
     outputDir = "libs"
     headerType = "gui"
     jvmOptions = ["-Xms512m", "-Xmx1024m"]
-    bundledJrePath = "${projectDir}/jre/jdk8u422-b05-jre"
+    bundledJrePath = "${rootProject.projectDir}/jre/jdk8u422-b05-jre"
     requires64Bit = true
 }
 
