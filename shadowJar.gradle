@@ -4,3 +4,5 @@ shadowJar {
         attributes "Main-Class": "${artifact_group}.${artifact_id}.Main"
     }
 }
+
+build.dependsOn(shadowJar)
