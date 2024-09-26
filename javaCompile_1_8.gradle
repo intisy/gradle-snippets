@@ -1,0 +1,6 @@
+apply plugin: "java"
+
+tasks.withType(JavaCompile) {
+    options.fork = true
+    options.forkOptions.executable = "${rootProject.projectDir}/java/jdk8u422-full/bin/javac.exe"
+}
