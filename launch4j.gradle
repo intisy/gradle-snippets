@@ -5,8 +5,7 @@ launch4j {
     outputDir = "libs"
     headerType = "gui"
     jvmOptions = ["-Xms512m", "-Xmx1024m"]
-    bundledJrePath = "${project.buildDir}/libs/jre"
-    requires64Bit = true
+    bundledJrePath = "jre"
 }
 
 tasks.register('copyFolder', Copy) {
