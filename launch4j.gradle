@@ -8,10 +8,4 @@ launch4j {
     bundledJrePath = "jre"
 }
 
-tasks.register('copyFolder', Copy) {
-    from "${rootProject.projectDir}/java/jre8u422-full"
-    into "${project.buildDir}/libs/jre"
-}
-
 build.dependsOn(createAllExecutables)
-createAllExecutables.dependsOn(copyFolder)
