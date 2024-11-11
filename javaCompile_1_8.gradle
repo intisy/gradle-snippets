@@ -1,7 +1,6 @@
 apply plugin: "io.github.intisy.javacompile-gradle"
 
 compile {
-    debug = true
     windows {
         jreUrl = "https://download.bell-sw.com/java/8u422+6/bellsoft-jre8u422+6-windows-amd64-full.zip"
         jdkUrl = "https://download.bell-sw.com/java/8u422+6/bellsoft-jdk8u422+6-windows-amd64-full.zip"
