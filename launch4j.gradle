@@ -7,5 +7,3 @@ launch4j {
     jvmOptions = ["-Xms512m", "-Xmx1024m"]
     bundledJrePath = "jre"
 }
-
-build.dependsOn(createAllExecutables)
