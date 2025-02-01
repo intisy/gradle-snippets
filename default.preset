@@ -1,6 +1,5 @@
 https://raw.githubusercontent.com/intisy/gradle-snippets/actions/base.gradle
 https://raw.githubusercontent.com/intisy/gradle-snippets/actions/jar.gradle
-https://raw.githubusercontent.com/intisy/gradle-snippets/actions/java.gradle:1.8
 https://raw.githubusercontent.com/intisy/gradle-snippets/actions/properties.gradle
 https://raw.githubusercontent.com/intisy/gradle-snippets/actions/repositories.gradle
 https://raw.githubusercontent.com/intisy/gradle-snippets/actions/test.gradle
