@@ -1,3 +1,0 @@
-version = project.hasProperty('artifact_version') ? project.property('artifact_version') : '1.0'
-group = artifact_group
-description = artifact_description

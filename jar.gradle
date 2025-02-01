@@ -1,8 +1,0 @@
-apply plugin: "java"
-
-jar {
-    archiveFileName = "${artifact_name}.jar"
-    manifest {
-        attributes "Main-Class": "${artifact_group}.${artifact_id}.Main"
-    }
-}
